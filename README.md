@@ -13,7 +13,7 @@ More info
 ---------
 
 You can find more information and discussion of this module on my blog [ZF Daily](http://www.zfdaily.com) here:
-[How to Configure PHP ini Settings in ZF2](http://www.zfdaily.com/2012/04/configure-php-settings-in-zf2/)
+[Configuring PHP ini Settings in ZF2](http://www.zfdaily.com/2012/04/configuring-php-settings-in-zf2/)
 
 --------------------------
 
@@ -53,5 +53,5 @@ Links
 -----
 
 - [DluPhpSettings](https://bitbucket.org/dlu/dluphpsettings) - git repository on BitBucket
-- [How to Configure PHP ini Settings in ZF2](http://www.zfdaily.com/2012/04/configure-php-settings-in-zf2/) - blog post
+- [Configuring PHP ini Settings in ZF2](http://www.zfdaily.com/2012/04/configuring-php-settings-in-zf2/) - blog post
   about this module
