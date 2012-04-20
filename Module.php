@@ -35,7 +35,6 @@ class Module implements AutoloaderProvider
      * @param \Zend\EventManager\Event $e
      */
     public function onBootstrap(Event $e) {
-        //$application = $e->getParam('application');
         $config      = $e->getParam('config');
         $phpSettings = $config['phpSettings'];
         if($phpSettings) {
