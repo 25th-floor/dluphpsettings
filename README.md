@@ -32,7 +32,7 @@ Usage
 
 Put any allowed PHP ini settings under the `phpSettings` key into any of your configuration files:
 
-    /* Global application configuration in /config/autoload/global.config.php */
+    /* Global application configuration in /config/autoload/global.php */
     <?php
     return array(
         'phpSettings'   => array(

@@ -1,18 +1,10 @@
 <?php
 namespace DluPhpSettings;
 
-use Zend\Module\Manager,
-    Zend\EventManager\StaticEventManager,
-    Zend\EventManager\Event,
-    Zend\Module\Consumer\AutoloaderProvider;
+use Zend\EventManager\Event;
 
-class Module implements AutoloaderProvider
+class Module
 {
-    public function init(Manager $moduleManager) {
-        $events = StaticEventManager::getInstance();
-        $events->attach('bootstrap', 'bootstrap', array($this, 'onBootstrap'), 300);
-    }
-
     public function getAutoloaderConfig() {
         return array(
             'Zend\Loader\ClassMapAutoloader' => array(
@@ -35,8 +27,9 @@ class Module implements AutoloaderProvider
      * @param \Zend\EventManager\Event $e
      */
     public function onBootstrap(Event $e) {
-        $config      = $e->getParam('config');
-        $phpSettings = $config['phpSettings'];
+        $app            = $e->getApplication();
+        $config         = $app->getConfiguration();
+        $phpSettings    = $config['phpSettings'];
         if($phpSettings) {
             foreach($phpSettings as $key => $value) {
                 ini_set($key, $value);
