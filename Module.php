@@ -25,7 +25,8 @@ class Module
      * @param \Zend\Mvc\MvcEvent $e
      */
     public function onBootstrap(\Zend\Mvc\MvcEvent $e) {
-        $config         = $e->getParam('config');
+        $app            = $e->getApplication();
+        $config         = $app->getConfiguration();
         $phpSettings    = $config['phpSettings'];
         if($phpSettings) {
             foreach($phpSettings as $key => $value) {
