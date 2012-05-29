@@ -1,5 +1,6 @@
 <?php
 namespace DluPhpSettings;
+use Zend\EventManager\Event;
 
 class Module
 {
@@ -22,10 +23,10 @@ class Module
 
     /**
      * Configure PHP ini settings on the bootstrap event
-     * @param \Zend\Mvc\MvcEvent $e
+     * @param Event $e
      */
-    public function onBootstrap(\Zend\Mvc\MvcEvent $e) {
-        $app            = $e->getApplication();
+    public function onBootstrap(Event $e) {
+        $app            = $e->getParam('application');
         $config         = $app->getConfiguration();
         $phpSettings    = $config['phpSettings'];
         if($phpSettings) {
