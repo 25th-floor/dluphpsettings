@@ -28,10 +28,12 @@ class Module
     public function onBootstrap(Event $e) {
         $app            = $e->getParam('application');
         $config         = $app->getConfiguration();
-        $phpSettings    = $config['phpSettings'];
-        if($phpSettings) {
-            foreach($phpSettings as $key => $value) {
-                ini_set($key, $value);
+        if(array_key_exists('phpSettings', $config)) {
+            $phpSettings    = $config['phpSettings'];
+            if(is_array($phpSettings)) {
+                foreach($phpSettings as $key => $value) {
+                    ini_set($key, $value);
+                }
             }
         }
     }
