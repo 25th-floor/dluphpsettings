@@ -4,7 +4,16 @@
     "license": "New-BSD-License",
     "keywords": [
         "dluphpsettings",
-        "zf2"
+        "php settings",
+        "zf2",
+        "zend framework 2",
+        "module"
     ],
-    "homepage": "https://bitbucket.org/dlu/dluphpsettings"
+    "homepage": "https://bitbucket.org/dlu/dluphpsettings",
+    "authors": [
+        {
+            "name": "David Lukas",
+            "homepage": "http://www.zfdaily.com"
+        }
+    ]
 }
