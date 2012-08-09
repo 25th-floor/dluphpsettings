@@ -1,0 +1,10 @@
+{
+    "name": "dluphpsettings/dluphpsettings",
+    "description": "ZF2 module to set the PHP ini settings based on the configuration data",
+    "license": "New-BSD-License",
+    "keywords": [
+        "dluphpsettings",
+        "zf2"
+    ],
+    "homepage": "https://bitbucket.org/dlu/dluphpsettings"
+}

@@ -27,7 +27,8 @@ class Module
      */
     public function onBootstrap(Event $e) {
         $app            = $e->getParam('application');
-        $config         = $app->getConfiguration();
+        /* @var $app \Zend\Mvc\Application */
+        $config         = $app->getConfig();
         if(array_key_exists('phpSettings', $config)) {
             $phpSettings    = $config['phpSettings'];
             if(is_array($phpSettings)) {
