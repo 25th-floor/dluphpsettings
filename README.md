@@ -17,15 +17,33 @@ You can find more information and discussion of this module on my blog [ZF Daily
 
 --------------------------
 
-Installation
-------------
+Installation - manual
+---------------------
 
 1.   Go to your project's directory.
-2.   Clone this project into your `./vendor/` directory as a `DluPhpSettings` module:
+2.   Clone this project into your `./vendor` directory as a `dlu/dluphpsettings` module:
 
-     `git clone https://bitbucket.org/dlu/dluphpsettings.git ./vendor/DluPhpSettings`
+     `git clone https://bitbucket.org/dlu/dluphpsettings.git ./vendor/dlu/dluphpsettings`
 
-3.   Enable this module in your `./config/application.config.php`
+3.   Follow the Post installation steps bellow
+
+Installation - with Composer
+----------------------------
+
+If you are using Composer in your application to install dependencies, you can use it to facilitate the installation of DluPhpSettings too.
+
+1.   Go to your project's directory.
+2.   Edit your `composer.json` file and add `"dlu/dluphpsettings": "dev-master"` into `require` section.
+3.   Run `php composer.phar install` (or `php composer.phar update`).
+4.   Follow the Post installation steps bellow
+
+Post installation steps
+-----------------------
+
+1.   Enable the DluPhpSettings module in your app config file `<your app>/config/application.config.php`:
+
+     - add `'./vendor/dlu',` under `module_paths` (if not already there)
+     - add `'DluPhpSettings',` under `modules`
 
 Usage
 -----
