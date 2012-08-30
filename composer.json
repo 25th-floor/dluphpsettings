@@ -15,5 +15,10 @@
             "name": "David Lukas",
             "homepage": "http://www.zfdaily.com"
         }
-    ]
+    ],
+    "autoload": {
+        "classmap": [
+            "./Module.php"
+        ]
+    }
 }
