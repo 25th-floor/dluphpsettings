@@ -16,6 +16,9 @@
             "homepage": "http://www.zfdaily.com"
         }
     ],
+    "require": {
+        "zendframework/zendframework": "dev-master"
+    },
     "autoload": {
         "classmap": [
             "./Module.php"
