@@ -1,6 +1,6 @@
 {
     "name": "dlu/dluphpsettings",
-    "description": "ZF2 module to set the PHP ini settings based on the configuration data",
+    "description": "ZF2 module to set PHP ini settings based on the configuration data",
     "license": "New-BSD-License",
     "keywords": [
         "dluphpsettings",
